@@ -7,4 +7,13 @@
     <string name="create_new_dish">Create New Dish</string>
     <string name="rate">Rate:</string>
     <string name="description">Description:</string>
+    <string name="name">Name:</string>
+    <string name="create">Create</string>
+    <string-array name="ratings">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

@@ -13,9 +13,17 @@
         <action
             android:id="@+id/goToDetails"
             app:destination="@id/dishDetailsFragment2" />
+        <action
+            android:id="@+id/goToNewDish"
+            app:destination="@id/newDishFragment" />
     </fragment>
     <fragment
         android:id="@+id/dishDetailsFragment2"
         android:name="com.vahagn.androidmidhomework13.DishDetailsFragment"
         android:label="DishDetailsFragment" />
+    <fragment
+        android:id="@+id/newDishFragment"
+        android:name="com.vahagn.android_mid_homework_13_part_2.NewDishFragment"
+        android:label="fragment_new_dish"
+        tools:layout="@layout/fragment_new_dish" />
 </navigation>

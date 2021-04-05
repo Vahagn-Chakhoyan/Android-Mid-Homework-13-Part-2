@@ -32,7 +32,7 @@ class DishesFragment : Fragment() {
         binding.dishes.adapter = DishesAdapter( {dishClicked(it)}, {deleteDishByIndex(it)}, {basket(it)}, {fav(it)})
         binding.cancelButton.setOnClickListener { binding.confirmDelete.visibility = View.GONE }
         binding.deleteButton.setOnClickListener { binding.confirmDelete.visibility = View.GONE; confirmDelete() }
-        //binding.createNewDish.setOnClickListener { findNavController().navigate(R.id.goToNewDish) }
+        binding.createNewDish.setOnClickListener { findNavController().navigate(R.id.goToNewDish) }
     }
 
     private fun fav(position: Int) {
