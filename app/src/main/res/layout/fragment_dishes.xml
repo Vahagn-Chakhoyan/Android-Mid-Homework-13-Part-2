@@ -22,14 +22,14 @@
         android:layout_height="wrap_content"
         android:background="#BFFFFFFF"
         android:clickable="true"
+        android:focusable="true"
         android:longClickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:focusable="true" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/cancelButton"
@@ -68,8 +68,20 @@
         android:layout_height="wrap_content"
         android:text="@string/create_new_dish"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/basketButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/basketButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basket"
+        app:layout_constraintBottom_toBottomOf="@+id/createNewDish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createNewDish"
+        app:layout_constraintTop_toTopOf="@+id/createNewDish" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

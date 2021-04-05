@@ -16,6 +16,9 @@
         <action
             android:id="@+id/goToNewDish"
             app:destination="@id/newDishFragment" />
+        <action
+            android:id="@+id/goToBasket"
+            app:destination="@id/basketFragment" />
     </fragment>
     <fragment
         android:id="@+id/dishDetailsFragment2"
@@ -26,4 +29,9 @@
         android:name="com.vahagn.android_mid_homework_13_part_2.NewDishFragment"
         android:label="fragment_new_dish"
         tools:layout="@layout/fragment_new_dish" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.vahagn.android_mid_homework_13_part_2.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" />
 </navigation>

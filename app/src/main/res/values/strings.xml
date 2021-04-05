@@ -9,6 +9,7 @@
     <string name="description">Description:</string>
     <string name="name">Name:</string>
     <string name="create">Create</string>
+    <string name="basket">Basket</string>
     <string-array name="ratings">
         <item>1</item>
         <item>2</item>

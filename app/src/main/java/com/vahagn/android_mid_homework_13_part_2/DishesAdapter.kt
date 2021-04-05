@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 class DishesAdapter(private val clickListener: (Int) -> Unit, private val longClickListener: (Int) -> Boolean,
@@ -29,7 +30,8 @@ class DishesAdapter(private val clickListener: (Int) -> Unit, private val longCl
         viewHolder.nameText.text = DishesFragment.dishes[position].name
         viewHolder.restaurantText.text = DishesFragment.dishes[position].restaurant.name
         viewHolder.ratingText.text = DishesFragment.dishes[position].rating.toString()
-        viewHolder.favButton.setImageDrawable(viewHolder.favButton.context.getDrawable(
+        viewHolder.favButton.setImageDrawable(
+            ContextCompat.getDrawable(viewHolder.favButton.context,
             if(DishesFragment.favs.contains(DishesFragment.dishes[position])) R.drawable.ic_favorite_24
             else R.drawable.ic_favorite_border_24))
 
